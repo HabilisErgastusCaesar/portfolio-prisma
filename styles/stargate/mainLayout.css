@@ -1,0 +1,38 @@
+.smaller-screen {
+    color:white;
+    .option-button {
+        display: flex;
+        flex-direction: row;
+        background-color: black;
+        border-bottom: 3px solid lightblue;
+        box-shadow:inset 0 0 30px rgb(96, 164, 187) ,  0 0 50px rgb(96, 164, 187);
+        width:100%;
+        height:40px;
+        .not-selected,
+        .selected {
+            background-color: rgb(12, 40, 78);
+            width:100%;
+        }
+        .not-selected {
+            border-bottom: 3px solid lightblue;
+        }
+        .not-selected-cast {
+            border-left: 1px solid lightblue;
+        }
+        .not-selected-info {
+            border-right: 1px solid lightblue;
+        }
+        .selected {
+            border-right: 3px solid lightblue;
+            border-left: 3px solid lightblue;
+        }
+        .selected-info {
+            border-right: none;
+            border-bottom-right-radius: 0;
+        }
+        .selected-cast {
+            border-bottom-left-radius: 0;
+            border-left: none;
+        }
+    }
+}
